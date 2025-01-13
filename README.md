@@ -30,3 +30,9 @@ Shallow modules is an indication of design that could be improved upon. The comp
 > Information leakage occurs when the same knowledge is used in multiple places, such as two different classes that both understand the format of a particular type of file.
 
 This is probably very common existing code bases that I have worked with but did not understand that this is a problem. Need to be on the look-out for this and ensure to avoid it. Can see now how this hampers maintainability by introducing a hidden dependency between the classes.
+
+### &#x1F6A9; Temporal Decomposition ### &#x1F6A9;
+
+> In temporal decomposition, execution order is reflected in the code structure: operations that happen at different times are in different methods or classes. If the same knowledge is used at different points in execution, it gets encoded in multiple places, resulting in information leakage.
+
+The word temporal relates to something time-related, like in which order something occurs in time. Example of temporal decomposition is to have one class that provides a interface to open a connection to something and then have the closing of the connection in another class. This should be avoided, both open and close of the connection belongs to the same class. That open and close occurs in different point in time does not matter.
