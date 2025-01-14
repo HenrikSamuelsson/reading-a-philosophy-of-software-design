@@ -36,3 +36,9 @@ This is probably very common existing code bases that I have worked with but did
 > In temporal decomposition, execution order is reflected in the code structure: operations that happen at different times are in different methods or classes. If the same knowledge is used at different points in execution, it gets encoded in multiple places, resulting in information leakage.
 
 The word temporal relates to something time-related, like in which order something occurs in time. Example of temporal decomposition is to have one class that provides a interface to open a connection to something and then have the closing of the connection in another class. This should be avoided, both open and close of the connection belongs to the same class. That open and close occurs in different point in time does not matter.
+
+### &#x1F6A9; Repetition ### &#x1F6A9;
+
+> A similar piece of code appearing over and over again indicates room for improvement of abstractions.
+
+The code can be broken out to a function to resolve this issue. Another way to resolve this can be to have `goto` statement. Even if `goto` should generally be avoided so can it be useful for error handling, making it possible to separate the normal flow of the code from error handling parts.
