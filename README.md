@@ -42,3 +42,10 @@ The word temporal relates to something time-related, like in which order somethi
 > A similar piece of code appearing over and over again indicates room for improvement of abstractions.
 
 The code can be broken out to a function to resolve this issue. Another way to resolve this can be to have `goto` statement. Even if `goto` should generally be avoided so can it be useful for error handling, making it possible to separate the normal flow of the code from error handling parts.
+
+### &#x1F6A9; Conjoined Functions ### &#x1F6A9;
+
+> A function shall be possible to understand in isolation.
+
+If you can't understand the implementation of one function without also understanding the implementation of another, there is a problem with the design.
+
