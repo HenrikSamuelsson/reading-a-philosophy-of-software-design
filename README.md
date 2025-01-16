@@ -49,7 +49,7 @@ The code can be broken out to a function to resolve this issue. Another way to r
 
 If you can't understand the implementation of one function without also understanding the implementation of another, there is a problem with the design.
 
-### &#x1F6A9; Overexposure ### &#x1F6A9;
+### &#x1F6A9; Overexposure &#x1F6A9;
 
 > If the API for a commonly used feature forces users to learn about other
 features that are rarely used, this increases the cognitive load on users who
