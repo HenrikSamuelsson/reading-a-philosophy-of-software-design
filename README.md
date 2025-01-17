@@ -25,6 +25,12 @@ List of topics that the author calls red flags, that should be avoided in the co
 
 Shallow modules is an indication of design that could be improved upon. The complicated interface increases the time it takes to learn how to use the module. Shallow modules also tend to leak information about the underlying implementation that can create coupling, making it impossible to refactor the module without also having to refactor all the modules that use the module.
 
+### &#x1F6A9; Implementation Documentation Contaminates Interface &#x1F6A9;
+
+> This red flag is raised when documentation for an interface contains information about the implementation, not required to be known to use the interface.
+
+In C typically this occurs when the documentation of a function describes how a function does things. The documentation of the function shall be limited to what high level description what the function does, how to use, and describe possible side-effects.
+
 ### &#x1F6A9; Information Leakage &#x1F6A9;
 
 > Information leakage occurs when the same knowledge is used in multiple places, such as two different classes that both understand the format of a particular type of file.
