@@ -63,6 +63,19 @@ don’t need the rarely used features.
 
 Overexposure can be avoided by not even letting to user chose obscure options and instead just automatically set a default, the most commonly used option. This will limit the number of parameters of the function. There can then be a separate function change the default options if needed, intended to be invoked in advanced use cases.
 
+### &#x1F6A9; Vague Name &#x1F6A9;
+
+> A broad vague name that can mean many things hampers the readability of the code. Can lead to bugs and makes it harder to maintain the code.
+
+Examples of vague names `x`, `data`, `ok`, and `error`.
+
+Vague names can be worked away by coming up with a more specific name, using two or three words:
+
+- `x` -> `lineNumber`
+- `data` -> `temperatureInCelsius`
+- `ok` -> `temperatureWithinRange`
+-  `error` -> `fileNotFound`
+
 ### Terms
 
 #### E
