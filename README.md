@@ -19,6 +19,12 @@ The book have generally been well received and it being short it seems obvious t
 
 List of topics that the author calls red flags, that should be avoided in the code base.
 
+### &#x1F6A9; Hard to Pick Name &#x1F6A9;
+
+> If it's hard to come up with a short and clear name for a code element, there may be a problem with the design of the element.
+
+This is commonly occurring when a function does more than one thing, and the name includes the word "and", `readTemperatureAndAdjustCoolingFanSpeed()`. 
+
 ### &#x1F6A9; Shallow Module &#x1F6A9;
 
 > A shallow module is one whose interface is complicated relative to the functionality it provides. Shallow modules don’t help much in the battle against complexity, because the benefit they provide (not having to learn about how they work internally) is negated by the cost of learning and using their interfaces. Small modules tend to be shallow.
@@ -29,7 +35,7 @@ Shallow modules is an indication of design that could be improved upon. The comp
 
 > This red flag is raised when documentation for an interface contains information about the implementation, not required to be known to use the interface.
 
-In C typically this occurs when the documentation of a function describes how a function does things. The documentation of the function shall be limited to what high level description what the function does, how to use, and describe possible side-effects.
+Typically this occurs when the documentation of a function describes how a function does things. The documentation of the function shall be limited to what high level description what the function does, how to use, and describe possible side-effects.
 
 ### &#x1F6A9; Information Leakage &#x1F6A9;
 
@@ -74,7 +80,7 @@ Vague names can be worked away by coming up with a more specific name, using two
 - `x` -> `lineNumber`
 - `data` -> `temperatureInCelsius`
 - `ok` -> `temperatureWithinRange`
--  `error` -> `fileNotFound`
+- `error` -> `fileNotFound`
 
 ### Terms
 
