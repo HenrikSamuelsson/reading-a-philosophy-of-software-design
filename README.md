@@ -92,7 +92,7 @@ List of terms presented in the box with explanations.
 
 #### Abstraction
 
-An **abstraction** is an simplified view of an entity, which omits unimportant details. Reason for having abstractions is that they simplifies reasoning about complex things, such as software.
+An **abstraction** is an simplified view of an entity, which purposely omits details. Reason for having abstractions is that they simplifies reasoning about complex things, such as software.
 
 #### E
 
