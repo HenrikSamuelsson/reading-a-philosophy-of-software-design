@@ -94,7 +94,7 @@ The book discusses software design principles that are encouraged to be followed
 
 Can seem harmless to introduce complexity in a single place in the code, thinking we can live with this just here. The problem is that once started to slack off it is very easy to turn it in to a habit. Within a few months the whole code base will be a mess caused by many small sins, that in isolation seemed harmless.
 
-The way to solve the problem with the code slowly but surly becoming a mess is to have a zero tolerance for bad code and just fix it directly at the time of writing the code.
+The way to solve the problem with the code slowly but surely becoming a mess, is to have a zero tolerance for bad code and just fix it directly at the time of writing the code.
 
 ### Terms
 
