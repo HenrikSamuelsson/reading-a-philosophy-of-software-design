@@ -17,7 +17,7 @@ The book have generally been well received and it being short it seems obvious t
 
 ## Red Flags
 
-List of topics that the author calls red flags, that should be avoided in the code base.
+List of topics that the author calls red flags, should be avoided in the code base.
 
 ### &#x1F6A9; Hard to Pick Name &#x1F6A9;
 
@@ -83,6 +83,18 @@ Vague names can be worked away by coming up with a more specific name, using two
 - `data` -> `temperatureInCelsius`
 - `ok` -> `temperatureWithinRange`
 - `error` -> `fileNotFound`
+
+## Design Principles
+
+The book discusses software design principles that are encouraged to be followed.
+
+### Complexity is Incremental
+
+> Complexity is incremental: you have to sweat the small stuff
+
+Can seem harmless to introduce complexity in a single place in the code, thinking we can live with this just here. The problem is that once started to slack off it is very easy to turn it in to a habit. Within a few months the whole code base will be a mess caused by many small sins, that in isolation seemed harmless.
+
+The way to solve the problem with the code slowly but surly becoming a mess is to have a zero tolerance for bad code and just fix it directly at the time of writing the code.
 
 ### Terms
 
